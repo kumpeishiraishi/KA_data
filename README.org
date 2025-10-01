@@ -5,6 +5,7 @@ Please note that the data has not been independently verified or peer-reviewed, 
 The system consists of particles interacting via the Lennard-Jones potential, confined in a three-dimensional cubic box with periodic boundary conditions.
 There are two species of particles, A and B, mixed in an 80:20 ratio.
 Unless otherwise noted, the total number of particles is $N = 1000$.
+The linear size of the box $L$ is determined with the number density $\rho = N/L^3 = 1.2$.
 
 The Lennard–Jones parameters are those of the Kob–Andersen mixture:
 - $\sigma_\mathrm{AA} = 1.0$, $\epsilon_\mathrm{AA} = 1.0$
