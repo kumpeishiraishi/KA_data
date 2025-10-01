@@ -1,0 +1,23 @@
+This repository contains reference data from personal simulations of a variant of the [[https://doi.org/10.1103/PhysRevLett.73.1376][Kob-Andersen model]] (details below).
+Please note that the data has not been independently verified or peer-reviewed, so use it with caution.
+
+* Model description
+The system consists of particles interacting via the Lennard-Jones potential, confined in a three-dimensional cubic box with periodic boundary conditions.
+There are two species of particles, A and B, mixed in an 80:20 ratio.
+Unless otherwise noted, the total number of particles is $N = 1000$.
+
+The Lennard–Jones parameters are those of the Kob–Andersen mixture:
+- $\sigma_\mathrm{AA} = 1.0$, $\epsilon_\mathrm{AA} = 1.0$
+- $\sigma_\mathrm{AB} = 0.8$, $\epsilon_\mathrm{AB} = 1.5$
+- $\sigma_\mathrm{BB} = 0.88$, $\epsilon_\mathrm{BB} = 0.5$
+
+The potential is truncated and force-shifted to ensure continuity at the cutoff distance.
+Unlike the original KA model, the cutoff distances here are modified as follows:
+- AA / BB interactions: $r_c = 1.5\sigma_\mathrm{AA} = 1.5$
+- AB interactions: $r_c = 2.5\sigma_\mathrm{AB} = 2.0$
+[[https://doi.org/10.1063/5.0004093][This modification]] retains good glass-forming ability at low temperatures.
+
+* Simulation details
+Simulations were performed using an in-house molecular dynamics code.
+The MD simulations were carried out with a time step of $\Delta t = 0.005$.
+All quantities are expressed in Lennard–Jones units.
